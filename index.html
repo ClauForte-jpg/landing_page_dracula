@@ -4,66 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INTERSTELLAR</title>
-    <link rel="stylesheet" href="./dist/css/main.css">
+    <title>Drácula de Bram Stoker</title>
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <style>
+      html { scroll-behavior: smooth; }
+    </style>
 </head>
 
 <body>
     <header class="header">
         <div class="header__container">
             <h1 class="header__logo">
-                <!-- <img class="header__logo" src="./dist/images/logo.png" alt="disney+"> -->
-                    INTERSTELLAR
+                Francis Ford Coppola 
             </h1>
             <ul class="header__links">
                 <li class="header__links__item">
                     <a href="#" class="button button--secundary">Assista agora</a>
                 </li>
-                <li class="header__links__item">
-                    <a href="#" class="button button--dark">Assine</a>
-                </li>
+ 
+            <li class="header__links__item">
+                <a href="#planos" class="button button--dark">Assine</a>
+            </li>
+
             </ul>
         </div>
     </header>
 
     <section class="hero">
         <div class="hero__content">
-            <!-- <div class="hero__content__branding">
-                <img src="./dist/images/logo.png" alt="disney+">
-            </div> -->
             <h3 class="title--big">
-                INTERSTELLAR
+                DRACULA DE BRAM STOKER 
             </h3>
             <p class="text--small">
-                por Christopher Nolan
+                por Coppola
             </p>
         </div>
     </section>
+
     <section class="shows">
         <nav class="shows__tabs">
-            <button data-tab-button="cenas" class="shows__tabs__button shows__tabs__button--is-active">Cenas</button>
-            <button data-tab-button="alguns_atores" class="shows__tabs__button ">Alguns atores</button>
+            <a href="#trailer" class="shows__tabs__button shows__tabs__button--is-active">Trailer</a>
+            <a href="#atores" class="shows__tabs__button">Principais Atores</a>
         </nav>
-        <ul data-tab-id="cenas" class="shows__list shows__list--is-active">
-            <li class="shows__list__item">
-                <img src="./dist/images/cenas/cena1.png" alt="">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/cenas/cena2.png" alt="">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/cenas/cena3.png" alt="">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/cenas/cena4.png" alt="">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/cenas/cena5.png" alt="">
-            </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/cenas/cena6.png" alt="">
-            </li>
-        </ul>
+
+        <!-- Seção dos atores principais -->
+        <section id="atores">
+            <ul data-tab-id="cenas" class="shows__list shows__list--is-active">
+                <li class="shows__list__item">
+                    <img src="./src/images/atores/Gary Oldman.png" alt="">
+                    <p class="nome-ator">Gary Oldman</p>
+                </li>
+                <li class="shows__list__item">
+                    <img src="./src/images/atores/Winona Ryderpng.png" alt="">
+                    <p class="nome-ator">Winona Ryder</p>
+                </li>
+                <li class="shows__list__item">
+                    <img src="./src/images/atores/Keanu Reaves.png" alt="">
+                    <p class="nome-ator">Keanu Reaves</p>
+                </li>
+                <li class="shows__list__item">
+                    <img src="./src/images/atores/Anthony Hopkins.png" alt="">
+                    <p class="nome-ator">Anthony Hopkins</p>
+                </li>
+                <li class="shows__list__item">
+                    <img src="./src/images/atores/Monica Bellucci.png" alt="">
+                    <p class="nome-ator">Monica Bellucci</p>
+                </li>
+                <li class="shows__list__item">
+                    <img src="./src/images/atores/Saide Frost.png" alt="">
+                    <p class="nome-ator">Saide Frost</p>
+                </li>
+            </ul>
+        </section>
+
         <ul data-tab-id="alguns_atores" class="shows__list">
             <li class="shows__list__item">
                 <img src="./dist/images/atores/Matthew McConaughey.png" alt="">
@@ -84,32 +97,32 @@
                 <img src="./dist/images/atores/Matt Damon.png" alt="">
             </li>
         </ul>
-        
     </section>
-    <section class="plans">
+
+    <section id="planos" class="plans">
         <h2 class="title"> Disponível em:</h2>
         <ul class="plans__list">
             <li class="plans__list__item">
-                <img src="dist/images/logos/primevideo_logo.png" alt="Disney+">
-                <strong class="title--small">R$ 27,90/mês*</strong>
+                <img src="./src/images/logos/primevideo_logo.png" alt="Disney+">
+                <strong class="title--small">R$ 40,60/mês*</strong>
                 <p class="text--big">
-                    Assista Interestelar com qualidade premium no Prime Video. Disponível para membros Prime ou para aluguel digital.
+                    Assista Dracula de Bram Stocker com qualidade premium no Prime Video. Disponível para membros Prime ou para aluguel digital.
                 </p>
                 <button class="button">Assine agora</button>
             </li>
             <li class="plans__list__item">
-                <img src="dist/images/logos/appletv_logo.png" alt="Disney+">
-                <strong class="title--small">R$ 45,90/mês*</strong>
+                <img src="./src/images/logos/appletv_logo.png" alt="appletv_logo">
+                <strong class="title--small">R$ 63,90/mês*</strong>
                 <p class="text--big">
-                    Curta Interestelar em alta definição na Apple TV. Compre ou alugue e assista quando quiser, em qualquer dispositivo Apple.
+                    Curta Dracula em alta definição na Apple TV. Compre ou alugue e assista quando quiser, em qualquer dispositivo Apple.
                 </p>
                 <button class="button">Assine agora</button>
             </li>
             <li class="plans__list__item">
-                <img src="dist/images/logos/max_logo.png" alt="Disney+">
-                <strong class="title--small">R$ 55,90/mês*</strong>
+                <img src="./src/images/logos/max_logo.png" alt="max_logo">
+                <strong class="title--small">R$ 75,90/mês*</strong>
                 <p class="text--big">
-                    Explore os mistérios do espaço com Interestelar no Max. Incluído na assinatura, pronto para maratonar agora mesmo.
+                    Este vídeo analisa a direção de arte e as referências no filme "Drácula de Bram Stoker". Incluído na assinatura, pronto para maratonar agora mesmo.
                 </p>
                 <button class="button">Assine agora</button>
             </li>
@@ -118,32 +131,31 @@
             *O preço pode variar caso a assinatura seja feita através de outras plataformas.
         </p>
     </section>
-    <section class="image-text-section">
-        <!-- <img src="./dist/images/tv_pc_tablet_celular.png" alt="imagem com tv, computador tablet e celular"> -->
+
+    <section id="trailer" class="image-text-section">
         <div class="video-youtube">
             <iframe 
-              src="https://www.youtube.com/embed/nyc6RJEEe0U?si=tRnk4greCwBlXPWA" 
-              title="Interestelar Trailer"
+              src="https://www.youtube.com/embed/cpAfqCUaVwg"
+              title="Dracula Bram Stocker Trailer"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
               style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;">
             </iframe>
-          </div>          
+        </div>          
         <div class="image-text-section__text_container">
             <h2 class="title">Assista ao Trailer Oficial</h2>
             <p class="text--big">
-                Viaje além das estrelas com o trailer de Interestelar. Uma prévia emocionante da jornada épica que 
-                desafia o tempo, o espaço e os limites da humanidade. Aperte o play e prepare-se para uma experiência 
-                cinematográfica inesquecível.
+                O clássico "Drácula de Bram Stoker" (1992) foi dirigido por Francis Ford Coppola, famoso por sua visão gótica e romântica da história, com trailers épicos que mostram Gary Oldman como o vampiro, Winona Ryder como Mina, e um visual deslumbrante que homenageia o cinema mudo e gótico.
             </p>
         </div>
     </section>
+
     <section class="available-devices">
         <h2 class="title">Disponível nos seus dispositivos favoritos</h2>
         <ul class="available-devices__list">
             <li class="available-devices__list__item">
-                <img src="./dist/images/dispositivos/computador.png" alt="computador">
+                <img src="./src/images/dispositivos/computador.png" alt="computador">
                 <h4 class="title--small">Computador</h4>
                 <ul class="text">
                     <li>Chrome OS</li>
@@ -152,7 +164,7 @@
                 </ul>
             </li>
             <li class="available-devices__list__item">
-                <img src="./dist/images/dispositivos/tv.png" alt="computador">
+                <img src="./src/images/dispositivos/tv.png" alt="tv">
                 <h4 class="title--small">TV</h4>
                 <ul class="text">
                     <li>Amazon Fire TV</li>
@@ -165,7 +177,7 @@
                 </ul>
             </li>
             <li class="available-devices__list__item">
-                <img src="./dist/images/dispositivos/videogames.png" alt="computador">
+                <img src="./src/images/dispositivos/videogames.png" alt="videogames">
                 <h4 class="title--small">Videogames</h4>
                 <ul class="text">
                     <li>PS4</li>
@@ -176,7 +188,7 @@
                 </ul>
             </li>
             <li class="available-devices__list__item">
-                <img src="./dist/images/dispositivos/celular.png" alt="computador">
+                <img src="./src/images/dispositivos/celular.png" alt="celular">
                 <h4 class="title--small">Celulares e tablets</h4>
                 <ul class="text">
                     <li>Tablets Amazon Fire</li>
@@ -186,38 +198,41 @@
             </li>
         </ul>
     </section>
+
     <section class="faq">
         <h2 class="title">Perguntas frequentes</h2>
         <ul class="faq__questions">
             <li class="faq__questions__item">
-                <div class="faq__questions__item__question" data-faq-question="true">
-                    Sobre o que é o filme Interestelar?
+                <div class="faq__questions__item__question" data-faq-question>
+                    Sobre o que é o filme Drácula de Bram Stoker?
                 </div>
-                <div class="faq__questions__item__answer text--big ">
-                    <p>O filme acompanha um grupo de astronautas em uma missão para encontrar um novo planeta habitável, 
-                        enquanto a Terra enfrenta uma crise ambiental. A história mistura ficção científica com fortes 
-                        temas emocionais, como amor, tempo e sobrevivência.</p>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="faq__questions__item">
-                <div class="faq__questions__item__question" data-faq-question="true">
-                    Quem são os principais atores do filme?
-                </div>
-                <div class="faq__questions__item__answer text--big">
-                    <p>
-                        O elenco principal conta com Matthew McConaughey, Anne Hathaway, Jessica Chastain, Michael Caine e Matt Damon.
+                <div class="faq__questions__item__answer">
+                    <p>O filme Drácula de Bram Stoker (1992), de Francis Ford Coppola, é uma adaptação gótica e trágica do romance, focando na busca de Drácula (Gary Oldman) por sua amada reencarnada, Mina (Winona Ryder), na Londres vitoriana, após séculos de solidão e desespero desde que se tornou vampiro no século XV ao perder sua esposa, Elisabeta. O diretor usa técnicas visuais que remetem ao início do cinema e efeitos práticos para criar uma atmosfera de amor eterno, culpa e horror, transformando o vampiro em uma figura romântica e trágica, mas também perigosa. 
+                    Sobre o que é o filme:
+                    Um Amor Perdido: A história começa com o Príncipe Vlad, um guerreiro que, ao perder sua esposa no século XV, amaldiçoa a Deus e se torna o vampiro Drácula.
+                    A Reencarnação: Séculos depois, em 1897, Drácula encontra Mina Harker, que ele vê como a reencarnação de sua amada Elisabeta, levando-o a ir para Londres.
+                    Terror e Sedução: O filme explora a obsessão de Drácula por Mina, a sedução de sua amiga Lucy, e a luta contra o Professor Van Helsing (Anthony Hopkins) e seus aliados, misturando romance gótico com terror.
+                    Estilo Visual: Coppola utiliza figurinos, maquiagem e efeitos práticos para criar um visual deslumbrante e uma atmosfera vitoriana, celebrando os primórdios do cinema. 
                     </p>
                 </div>
             </li>
             <li class="faq__questions__item">
-                <div class="faq__questions__item__question" data-faq-question="true">
-                    Quem dirigiu Interestelar?
+                <div class="faq__questions__item__question" data-faq-question>
+                    Quem são os principais atores do filme?
                 </div>
                 <div class="faq__questions__item__answer text--big">
                     <p>
-                        O filme foi dirigido por Christopher Nolan, conhecido por obras como A Origem e a trilogia O Cavaleiro das Trevas.
+                    O filme "Drácula de Bram Stoker" (1992), dirigido por Francis Ford Coppola, tem como elenco principal Gary Oldman (Drácula), Winona Ryder (Mina/Elisabeta), Keanu Reeves (Jonathan Harker) e Anthony Hopkins (Prof. Van Helsing), com trailer disponível no YouTube, mostrando a trama gótica de romance e terror com Drácula buscando a reencarnação de seu amor.
+                    </p>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Quem dirigiu o filme Drácula de Bram Stocker?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    <p>
+                        O filme "Drácula de Bram Stoker" (1992) foi dirigido por Francis Ford Coppola, conhecido por obras como "O Poderoso Chefão", sendo uma adaptação gótica e romântica do clássico de terror, com um visual estilizado e focado na trágica história de amor do vampiro, interpretado por Gary Oldman, Winona Ryder, Keanu Reeves e Anthony Hopkins no elenco principal, e cujo trailer você pode encontrar aqui. 
                     </p>
                 </div>
             </li>
@@ -226,11 +241,11 @@
 
     <footer class="footer">
         <div class="footer__container">
-            <img class="footer__logo" src="./dist/images/logos/logo.png" alt="Disney+">
+            <img class="footer__logo" src="./src/images/logos/disneyplus_underline.png" alt="Disney+">
             <ul class="footer__links ">
                 <li class="footer__links__item">
                     <div class="language-selector">
-                        <img src="./dist/images/icones/globe.svg" alt="globo do mundo">
+                        <img src="./src/images/logos/logo.png" alt="globo do mundo">
                         <select>
                             <option>English</option>
                             <option selected>Português</option>
@@ -257,11 +272,10 @@
                 </li>
             </ul>
             <p class="text--small">
-                A programação do conteúdo esportivo varia de acordo com o plano. Para usar as plataformas, é necessário ser
-                assinante e ter mais de 18 anos de idade. Conteúdo sujeito a disponibilidade.
+                De acordo com o seu plano escolhido, a programação exibe conforme a grade disponível. 
             </p>
             <p class="text--small">
-                © 2025 Enoque Ribeiro. Todos os direitos reservados.
+                © 2026 Claudia Forte. Todos os direitos reservados.
             </p>
         </div>
     </footer>

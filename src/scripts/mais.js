@@ -46,8 +46,7 @@ function exibeElementosDoHeader(){
 
 function abreOuFechaResposta(elemento){
     const classe = 'faq__questions__item--is-open';
-    const elementoPai = elemento.target.parentNode;
-
+    const elementoPai = elemento.target.closest('.faq__questions__item');
     elementoPai.classList.toggle(classe);
 }
 
