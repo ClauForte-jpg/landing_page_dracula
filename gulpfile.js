@@ -25,7 +25,8 @@ function images(){
 exports.default = gulp.parallel(styles, images, scripts);
 
 exports.watch = function(){
-	gulp.watch('./src/styles/*.scss', gulp.parallel(styles));
-	gulp.watch('./src/scripts/*.js'), gulp.parallel(scripts);
+    gulp.watch('./src/styles/*.scss', gulp.parallel(styles));
+    // O parêntese deve fechar apenas no final da linha:
+    gulp.watch('./src/scripts/*.js', gulp.parallel(scripts)); 
 };
 
